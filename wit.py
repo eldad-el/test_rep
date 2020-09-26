@@ -12,6 +12,7 @@ if __name__ == "__main__":
 
 
 def run(*args, **kwargs):
+    print("running")
     attrs = importlib.import_module(os.path.basename(__file__).split(".")[0])
     args_list = args[0]
     for n in range(1, len(args_list)):
